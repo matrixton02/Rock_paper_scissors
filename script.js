@@ -22,13 +22,13 @@ const showWinner=(userWin)=>{
     if(userWin){
         userScore++;
         Uscore.innerText=userScore;
-        msg.innerText=`You Win! ${userChoice} beats ${compChoice}`;
+        msg.innerText=`You Win! your ${userChoice} beats ${compChoice}`;
         msg.style.backgroundColor="green";
     }
     else{
         compScore++;
         Cscore.innerText=compScore;
-        msg.innerText=`You loose. ${compChoice} beats ${userChoice}`;
+        msg.innerText=`You loose. ${compChoice} beats your ${userChoice}`;
         msg.style.backgroundColor="red";
     }
 
